@@ -12,10 +12,10 @@ The dockerfile will:
 * Unzip the APIM 1.6.0 ZIP.
 * Remove the APIM1.6.0 ZIP.
 * Expose the container port `9443`.
-* Set the API M anager `wso2server.sh` start-up script as the container start-up command.
+* Set the API Manager `wso2server.sh` start-up script as the container start-up command.
 
 ### Usage
 * To pull: `docker pull isim/wso2apim`
 * To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2apim`
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
-* To access API Manager web admin console, navigate to https://localhost:9443
+* To access API Manager web admin console, navigate to `https://localhost:9443`
