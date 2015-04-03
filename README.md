@@ -6,6 +6,7 @@ Docker image to install and run WSO2 API Manager. It uses the [dockerfile/java](
 If you find this helpful, feel free to endorse me on [coderwall](https://coderwal.com/ivanhcsim). [![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
 
 The dockerfile will:
+
 * Use `wget` to pull the APIM 1.6.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
 * Unzip the APIM 1.6.0 ZIP.
