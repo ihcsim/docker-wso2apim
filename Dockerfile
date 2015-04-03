@@ -1,7 +1,7 @@
 #
 # WSO2 API Manager 1.6.0
 #
-FROM dockerfile/java
+FROM java:7
 MAINTAINER isim, ihcsim@gmail.com
 
 RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-1.6.0.zip && \
@@ -11,5 +11,6 @@ RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-1.6.0.zi
     unzip /opt/wso2am-1.6.0.zip -d /opt && \
     rm /opt/wso2am-1.6.0.zip
 
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 EXPOSE 9443
 CMD ["/opt/wso2am-1.6.0/bin/wso2server.sh"]
