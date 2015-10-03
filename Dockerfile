@@ -13,4 +13,7 @@ RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-1.8.0.zi
 
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 EXPOSE 9443
+EXPOSE 9763
+EXPOSE 8243
+EXPOSE 8280
 CMD ["/opt/wso2am-1.8.0/bin/wso2server.sh"]
