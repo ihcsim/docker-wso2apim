@@ -7,10 +7,10 @@ If you find this helpful, feel free to endorse me on [coderwall](https://coderwa
 
 The dockerfile will:
 
-* Use `wget` to pull the APIM 1.6.0 ZIP from a S3 bucket into the container `/opt` folder.
+* Use `wget` to pull the APIM 1.9.1 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
-* Unzip the APIM 1.6.0 ZIP.
-* Remove the APIM1.6.0 ZIP.
+* Unzip the APIM 1.9.1 ZIP.
+* Remove the APIM1.9.1 ZIP.
 * Expose the container port `9443`.
 * Set the API Manager `wso2server.sh` start-up script as the container start-up command.
 
