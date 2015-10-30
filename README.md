@@ -12,12 +12,14 @@ The dockerfile will:
 
 ### Tags
 * [apim-1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1)
+* [apim-1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1-alpine)
 * [apim-1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.8.0)
 * [apim-1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.6.0)
 
 ### Usage
 * To pull: `docker pull isim/wso2apim`
-* To run: `docker run --rm --name your_container_name -p 9443:9443 isim/wso2apim`
+* To run ubuntu-based image: `docker run --rm --name your_container_name -p 9443:9443 isim/wso2apim`
+* To run alpine-based image: `docker run --rm -h localhost --name your_container_name -p 9443:9443 isim/wso2apim`
 * To access API Manager web admin console, navigate to `https://localhost:9443`
 
 Follow me on [![alt text][1.1]][1]
