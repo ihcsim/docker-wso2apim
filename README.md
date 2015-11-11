@@ -11,13 +11,16 @@ The dockerfile will:
 * Set the API Manager `wso2server.sh` start-up script as the container start-up command.
 
 ### Tags
-* [apim-1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1)
-* [apim-1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.8.0)
-* [apim-1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.6.0)
+* [1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1)
+* [1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1-alpine) - Experimental with API Manager 1.9.1
+* [1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/1.8.0)
+* [1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/1.6.0)
 
 ### Usage
 * To pull: `docker pull isim/wso2apim`
 * To run: `docker run --rm --name your_container_name -p 9443:9443 isim/wso2apim`
+* To pull alpine-based image: `docker pull isim/wso2apim:alpine-java`
+* To run alpine-based image: `docker run --rm -h localhost --name your_container_name -p 9443:9443 isim/wso2apim:alpine-java`
 * To access API Manager web admin console, navigate to `https://localhost:9443`
 
 Follow me on [![alt text][1.1]][1]
