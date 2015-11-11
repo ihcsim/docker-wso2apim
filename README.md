@@ -1,4 +1,4 @@
-# wso2apim
+### wso2apim
 
 Docker image to install and run WSO2 API Manager. 
 
@@ -11,10 +11,10 @@ The dockerfile will:
 * Set the API Manager `wso2server.sh` start-up script as the container start-up command.
 
 ### Tags
-* [apim-1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1)
-* [apim-1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1-alpine)
-* [apim-1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.8.0)
-* [apim-1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.6.0)
+* [1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1)
+* [1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.9.1-alpine)
+* [1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.8.0)
+* [1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/apim-1.6.0)
 
 ### Usage
 * To pull: `docker pull isim/wso2apim`
