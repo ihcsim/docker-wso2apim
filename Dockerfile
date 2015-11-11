@@ -1,7 +1,7 @@
 #
 # WSO2 API Manager 1.9.0
 #
-FROM isim/oraclejava
+FROM isim/oraclejava:1.7.0_80
 MAINTAINER Ivan Sim, ihcsim@gmail.com
 
 RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-1.9.1.zip && \
