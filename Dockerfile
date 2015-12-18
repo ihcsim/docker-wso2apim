@@ -12,4 +12,4 @@ RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-1.9.1.zi
     rm /opt/wso2am-1.9.1.zip
 
 EXPOSE 9443 9763 8243 8280 10397 7711
-CMD ["/opt/wso2am-1.9.1/bin/wso2server.sh"]
+ENTRYPOINT ["/opt/wso2am-1.9.1/bin/wso2server.sh"]
