@@ -1,34 +1,35 @@
-### wso2apim
+# docker-wso2apim
 
-Docker image to install and run WSO2 API Manager. 
+[ ![Codeship Status for ihcsim/docker-wso2apim](https://app.codeship.com/projects/f9f472e0-c271-0134-3993-22c030d3a647/status?branch=master)](https://app.codeship.com/projects/197444)
 
-### Tags
+Docker image to install and run WSO2 API Manager.
 
-* [1.9.1, latest](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1)
+## Tags
+* [2.0.0, latest](https://github.com/ihcsim/docker-wso2apim/tree/2.0.0)
+* [1.9.1](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1)
 * [1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1-alpine) - Experimental with API Manager 1.9.1
 * [1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/1.8.0)
 * [1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/1.6.0)
 
-### Description
-
-The dockerfile will:
-* Use `wget` to pull the APIM 1.9.1 ZIP from a S3 bucket into the container `/opt` folder.
+## Description
+The Dockerfile will:
+* Use `wget` to pull the WSO2 API Manager 2.0.0 zip file from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
-* Unzip the APIM 1.9.1 ZIP.
-* Remove the APIM 1.9.1 ZIP.
+* Unzip the APIM 2.0.0 ZIP.
+* Remove the APIM 2.0.0 ZIP.
 * Expose the container port `9443`, `9736`, `8243`, `8280`, `10397`, `7711`.
 * Set the `wso2server.sh` start-up script as the container entrypoint.
 
-### Usage
+## Usage
+To run the WSO2 API Manager:
+```sh
+$ docker run -d --name apim -p 9443:9443 isim/wso2apim
+```
 
-* To pull: `docker pull isim/wso2apim`
-* To run: `docker run --rm --name your_container_name -p 9443:9443 -p 9736:9736 -p 8243:8243 -p 8280:8280 -p 10397:10397 -p 7711:7711 isim/wso2apim`
-* To access the web admin console, navigate to `https://localhost:9443/carbon`
-* To access the publisher, navigate to `https://localhost:9443/publisher`
-* To access the API store, navigate to `https://localhost:9443/store`
-* To pull alpine-based image: `docker pull isim/wso2apim:alpine-java`
-* To run alpine-based image: `docker run --rm -h localhost --name your_container_name -p 9443:9443 isim/wso2apim:alpine-java`
+To access the web UI:
+* Admin console: https://localhost:9443/carbon
+* Publisher console: https://localhost:9443/publisher
+* API store: https://localhost:9443/store
 
-Follow me on [![alt text][1.1]][1]
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[1]: http://www.twitter.com/IvanHCSIM
+## License
+Refer to the [LICENSE](LICENSE) file. WSO2 license can be found [here](http://wso2.com/licenses).

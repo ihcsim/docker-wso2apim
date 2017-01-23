@@ -1,0 +1,16 @@
+apim:
+  build:
+    image: isim/wso2apim
+    dockerfile: Dockerfile
+    args:
+      VCS_REF: a0f88ac
+  cached: true
+
+http_test:
+  build:
+    dockerfile: Dockerfile-HttpTest
+  environment:
+    API_MANAGER_HOST: apim
+  links:
+    - apim
+  cached: true

@@ -1,0 +1,6 @@
+FROM appropriate/curl
+MAINTAINER Ivan Sim, ihcsim@gmail.com
+
+COPY test/http.sh /test/http.sh
+WORKDIR /test
+ENTRYPOINT ["/bin/sh"]
