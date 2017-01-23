@@ -3,7 +3,7 @@ apim:
     image: isim/wso2apim
     dockerfile: Dockerfile
     args:
-      VCS_REF: a0f88ac
+      VCS_REF: e11fff5
   cached: true
 
 http_test:
