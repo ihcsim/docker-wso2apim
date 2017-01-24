@@ -1,15 +1,7 @@
 # docker-wso2apim
-
-[ ![Codeship Status for ihcsim/docker-wso2apim](https://app.codeship.com/projects/f9f472e0-c271-0134-3993-22c030d3a647/status?branch=master)](https://app.codeship.com/projects/197444)
+[ ![Codeship Status for ihcsim/docker-wso2apim](https://app.codeship.com/projects/f9f472e0-c271-0134-3993-22c030d3a647/status?branch=master)](https://app.codeship.com/projects/197444) [![](https://images.microbadger.com/badges/version/isim/wso2apim:2.0.0.svg)](https://microbadger.com/images/isim/wso2apim:2.0.0 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/isim/wso2apim:2.0.0.svg)](https://microbadger.com/images/isim/wso2apim:2.0.0 "Get your own commit badge on microbadger.com") [![](https://images.microbadger.com/badges/image/isim/wso2apim:2.0.0.svg)](https://microbadger.com/images/isim/wso2apim:2.0.0 "Get your own image badge on microbadger.com")
 
 Docker image to install and run WSO2 API Manager.
-
-## Tags
-* [2.0.0, latest](https://github.com/ihcsim/docker-wso2apim/tree/2.0.0)
-* [1.9.1](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1)
-* [1.9.1-alpine](https://github.com/ihcsim/docker-wso2apim/tree/1.9.1-alpine) - Experimental with API Manager 1.9.1
-* [1.8.0](https://github.com/ihcsim/docker-wso2apim/tree/1.8.0)
-* [1.6.0](https://github.com/ihcsim/docker-wso2apim/tree/1.6.0)
 
 ## Description
 The Dockerfile will:
