@@ -5,8 +5,8 @@ ARG VCS_REF
 LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/ihcsim/docker-wso2apim"
 
-ARG APIM_VERSION=${APIM_VERSION:-2.0.0}
-RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-${APIM_VERSION}.zip && \
+ARG APIM_VERSION=${APIM_VERSION:-2.1.0}
+RUN wget -P /opt http://download.openpkg.org/components/cache/wso2am/wso2am-${APIM_VERSION}.zip && \
     apt-get update && \
     apt-get install -y zip && \
     apt-get clean && \
