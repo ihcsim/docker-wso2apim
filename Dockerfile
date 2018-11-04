@@ -16,3 +16,4 @@ RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2am-${APIM_V
 EXPOSE 9443 9763 8243 8280 10397 7711
 WORKDIR /opt/wso2am-${APIM_VERSION}
 ENTRYPOINT ["bin/wso2server.sh"]
+VOLUME /opt/wso2am-${APIM_VERSION}/repository/database
