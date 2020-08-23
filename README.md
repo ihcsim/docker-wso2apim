@@ -13,9 +13,30 @@ The Dockerfile will:
 * Set the `wso2server.sh` start-up script as the container entrypoint.
 
 ## Usage
-To run the WSO2 API Manager:
+To build the api-manager and test images with [`earthly`](https://docs.earthly.dev/):
+
 ```sh
-$ docker run -d --name apim -p 9443:9443 isim/wso2apim
+earth +image
+
+earth +test-image
+```
+
+To run the WSO2 API Manager:
+
+```sh
+export API_MANAGER_HOST=apim
+export TEST_NETWORK=test
+
+docker network create "$TEST_NETWORK"
+
+docker run -d --name "$API_MANAGER_HOST" \
+  --network "$TEST_NETWORK" \
+  -p 9443:9443 \
+  wso2am:2.1.0-update14
+
+docker run --network "$TEST_NETWORK" \
+  --env API_MANAGER_HOST="$API_MANAGER_HOST" \
+  wso2am-test
 ```
 
 To access the web UI:
